@@ -16,3 +16,21 @@ $('.smooth-scroll').on('click', 'a', function () {
     return false;
   }
 });
+
+$('#navbar-open').on('click', function(){
+  $('#links').removeClass('hidden');
+  $('#navbar-open').addClass('hidden');
+  $('#navbar-close').removeClass('hidden');
+});
+
+$('#navbar-close').on('click', function(){
+  $('#links').addClass('hidden');
+  $('#navbar-open').removeClass('hidden');
+  $('#navbar-close').addClass('hidden');
+});
+
+$('#links').on('click', function(){
+  $('#links').addClass('hidden');
+  $('#navbar-open').removeClass('hidden');
+  $('#navbar-close').addClass('hidden');
+});
