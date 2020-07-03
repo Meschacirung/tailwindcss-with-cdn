@@ -6,12 +6,13 @@
     <title>Tailwindcss landing page</title>
 
     <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
 
     <header>
         <nav class="w-full md:px-12 px-6 pt-2 fixed">
-            <div class="smooth-scroll flex items-center justify-between flex-wrap bg-white px-6 md:px-6 py-2 shadow-lg rounded-md">
+            <div class="smooth-scroll flex items-center justify-between flex-wrap bg-white px-6 md:px-6 py-2 shadow-md rounded-md">
                 <div class="flex items-center flex-shrink-0 text-gray-600 mr-6">
                     <a href="#home" class="font-bold text-3xl text-purple-700">
                         Rise<span class="font-normal text-gray-600">cartel</span> 
@@ -197,7 +198,27 @@
 
     <div class="mt-12 py-20 md:px-20 px-8 bg-gray-200" id="login">
         <div class="m-auto lg:w-3/5 sm:w-4/5">
-            <div class="bg-white shadow-lg">
+            <div class="hidden bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md" role="alert">
+                <div class="flex">
+                  <div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></svg></div>
+                  <div>
+                    <p class="font-bold">Our privacy policy has changed</p>
+                    <p class="text-sm">Make sure you know how these changes affect you.</p>
+                  </div>
+                </div>
+            </div>
+
+            <div id="alert" class="hidden bg-red-100 border-t-4 border-red-500 rounded-b text-red-900 px-4 py-3 shadow-md" role="alert">
+                <div class="flex">
+                  <div class="py-1"><svg class="fill-current h-6 w-6 text-red-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></svg></div>
+                  <div>
+                    <p class="font-bold">Our privacy policy has changed</p>
+                    <p class="text-sm">Make sure you know how these changes affect you.</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg mt-5">
                 <div class="grid md:grid-cols-2 flex items-center">
                     <div class="hidden md:block">
                         <img src="images/signup.371e3d30fb0d2faf2525c9f62bc195cd.jpg" alt="">
@@ -211,11 +232,11 @@
                         <form action="">
                             <div class="mt-4">
                                 <label for="username">Username</label>
-                                <input type="text" id="username" name="username" placeholder="username" class="mt-3 rounded block p-2 border border-gray-400 w-full">
+                                <input required type="text" id="username" name="username" placeholder="username" class="mt-3 rounded block p-2 border border-gray-400 w-full">
                             </div>
                             <div class="mt-4">
                                 <label for="password">Password</label>
-                                <input type="password" id="password" name="password" placeholder="password" class="mt-3 rounded block p-2 border border-gray-400 w-full">
+                                <input required type="password" id="password" name="password" placeholder="password" class="mt-3 rounded block p-2 border border-gray-400 w-full">
                             </div>
 
                             <p class="mt-5 mb-8 text-gray-600">Don't have an account ? <a href="" class="text-blue-600 font-semibold">Create</a></p>
