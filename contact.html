@@ -42,7 +42,7 @@
         </nav>
     </header>
 
-    <div class="flex items-center">
+    <div class="flex">
         <div class="w-5/12 py-20 px-12 bg-gray-200">
             <div class="p-6 bg-white shadow-lg rounded-md">
                 <h1 class="font-bold text-blue-900 text-3xl">Fidélisez vos équipes</h1>
@@ -80,8 +80,65 @@
                 <img src="images/undraw_working_from.png" class="w-56" alt="">
             </div>
         </div>
-        <div class="w-7/12 p-20 bg-white">
-        
+        <div class="w-6/12 h-100 mt-20 px-12 mr-16 bg-white overflow-y-scroll">
+            <h1 class="font-bold text-blue-900 text-3xl mt-6">Contactez-nous</h1>
+            
+            <form action="" class="mt-6">
+
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+
+                        <label for="firstname" class="font-semibold text-lg text-gray-800">Prénom *</label>
+                        <input type="text" id="firstname" name="firstname" class="py-1 w-full border-b-2 border-gray-500 focus:border-purple-600 outline-none">
+                    </div>
+
+                    <div>
+                        <label for="name" class="font-semibold text-lg text-gray-800">Nom *</label>
+                        <input type="text" id="name" name="name" class="py-1 w-full border-b-2 border-gray-500 focus:border-purple-600 outline-none">
+                    </div>
+
+                </div>
+
+                <div class="grid grid-cols-2 gap-8 mt-8">
+                    
+                    <div>
+                        <label for="email" class="font-semibold text-lg text-gray-800">Email (professionnel) *</label>
+                        <input type="email" id="email" name="email" class="py-1 w-full border-b-2 border-gray-500 focus:border-purple-600 outline-none">
+                    </div>
+
+                    <div>
+                        <label for="phone" class="font-semibold text-lg text-gray-800">Téléphone *</label>
+                        <input type="tel" id="phone" name="phone" class="py-1 w-full border-b-2 border-gray-500 focus:border-purple-600 outline-none">
+                    </div>
+
+                </div>
+
+                <div class="mt-8">
+                    <label for="companyName" class="font-semibold text-lg text-gray-800">Nom de votre entreprise *</label>
+                    <input type="text" id="companyName" name="companyName" class="py-1 w-full border-b-2 border-gray-500 focus:border-purple-600 outline-none">
+                </div>
+
+                <div class="mt-8">
+                    <label for="teamNumber" class="font-semibold text-lg text-gray-800">Combien de collaborateurs dans votre structure ? *</label>
+                    <input type="number" value="1" id="teamNumber" name="teamNumber" class="py-1 w-full border-b-2 border-gray-500 focus:border-purple-600 outline-none">
+                </div>
+
+                <div class="mt-8">
+                    <label for="type" class="font-semibold text-lg text-gray-800">Vous êtes à la recherche de : *</label>
+                    <select name="type" id="type" class="py-1 w-full border-b-2 border-gray-500 focus:border-purple-600 outline-none">
+                        <option value="sirstOption">First Option</option>
+                        <option value="secondOption">Second Option</option>
+                        <option value="thirdOption">Third Option</option>
+                    </select>
+                </div>
+
+                <div class="text-center">
+                    <p class="text-center mt-8">En soumettant ce formulaire, vous acceptez notre  <a href="" class="border-b border-gray-500">politique de protection de données personnelles.</a></p>
+                    <button type="submit" class="mt-8 px-10 py-3 bg-purple-600 text-white uppercase font-bold rounded shadow-lg hover:bg-purple-700">Demander une démo gratuite</button>
+                    <p class="text-left mt-8"><span class="text-xl font-bold">*</span> champs obligatoires</p>
+                </div>
+
+            </form>
         </div>
     </div>
 
